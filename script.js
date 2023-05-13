@@ -32,7 +32,7 @@ function addData() {
 function removeFailedStudent() {
   //Write your code here, just console.log
   for(let i=0; i<arr.length; i++) {
-    if(arr[i].marks < 50) {
+    if(arr[i] != undefined && arr[i].marks < 50) {
       delete arr[i];
     }
   }
